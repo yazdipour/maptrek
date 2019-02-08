@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:paddingTop="4dp" android:layout_width="UNKNOWN_DATA_0x7f07009e" android:layout_height="UNKNOWN_DATA_0x7f07009d" android:paddingStart="4dp" android:paddingEnd="4dp">
+    <mobi.maptrek.view.BitmapTileMapPreviewView android:id="@+id/map" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <TextView android:textAppearance="?unknown_attr_ref: 1010042" android:id="@+id/name" android:background="@color/panelBackground" android:padding="2dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:paddingStart="8dp" />
+    <View android:id="@+id/indicator" android:layout_width="UNKNOWN_DATA_0x401" android:layout_height="match_parent" android:layout_alignParentStart="true" />
+</RelativeLayout>

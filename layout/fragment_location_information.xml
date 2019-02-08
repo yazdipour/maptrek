@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@color/panelSolidBackground" android:padding="@dimen/fragment_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:columnCount="3">
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/degrees" />
+    <TextView android:textStyle="bold" android:textColor="?unknown_attr_ref: 1010036" android:id="@+id/coordinate_degree" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textIsSelectable="true" android:layout_marginStart="@dimen/table_padding" />
+    <LinearLayout android:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_rowSpan="5" android:paddingStart="@dimen/panel_padding">
+        <ImageButton android:id="@+id/shareButton" android:background="?unknown_attr_ref: 101045c" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_share" android:tint="@color/colorPrimaryDark" />
+        <ImageButton android:id="@+id/inputButton" android:background="?unknown_attr_ref: 101045c" android:paddingTop="@dimen/image_button_padding" android:paddingBottom="@dimen/image_button_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_input" android:tint="@color/colorPrimaryDark" />
+        <ImageButton android:id="@+id/switchOffButton" android:background="?unknown_attr_ref: 101045c" android:paddingTop="@dimen/image_button_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_location_disable" android:tint="@color/colorPrimaryDark" />
+    </LinearLayout>
+    <TextView android:textStyle="bold" android:textColor="?unknown_attr_ref: 1010036" android:id="@+id/coordinate_degmin" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_column="1" android:textIsSelectable="true" android:layout_marginStart="@dimen/table_padding" />
+    <TextView android:textStyle="bold" android:textColor="?unknown_attr_ref: 1010036" android:id="@+id/coordinate_degminsec" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_column="1" android:textIsSelectable="true" android:layout_marginStart="@dimen/table_padding" />
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/coordinate_utmups" />
+    <TextView android:textStyle="bold" android:textColor="?unknown_attr_ref: 1010036" android:id="@+id/coordinate_utmups" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textIsSelectable="true" android:layout_marginStart="@dimen/table_padding" />
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/coordinate_mgrs" />
+    <TextView android:textStyle="bold" android:textColor="?unknown_attr_ref: 1010036" android:id="@+id/coordinate_mgrs" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textIsSelectable="true" android:layout_marginStart="@dimen/table_padding" />
+    <TableLayout android:layout_gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/extendTable" android:paddingTop="@dimen/table_padding" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_columnSpan="3">
+        <TableRow>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/declination" android:maxLines="1" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/utc_offset" android:maxLines="1" android:layout_marginStart="@dimen/table_padding" />
+            <TextView android:id="@+id/sunriseTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sunrise" android:maxLines="1" android:layout_marginStart="@dimen/table_padding" />
+            <TextView android:id="@+id/sunsetTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sunset" android:maxLines="1" android:layout_marginStart="@dimen/table_padding" />
+        </TableRow>
+        <TableRow>
+            <TextView android:textStyle="bold" android:textColor="?unknown_attr_ref: 1010036" android:id="@+id/declination" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textIsSelectable="true" />
+            <TextView android:textStyle="bold" android:textColor="?unknown_attr_ref: 1010036" android:id="@+id/offset" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textIsSelectable="true" android:layout_marginStart="@dimen/table_padding" />
+            <TextView android:textStyle="bold" android:textColor="?unknown_attr_ref: 1010036" android:id="@+id/sunrise" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textIsSelectable="true" android:layout_marginStart="@dimen/table_padding" />
+            <TextView android:textStyle="bold" android:textColor="?unknown_attr_ref: 1010036" android:id="@+id/sunset" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textIsSelectable="true" android:layout_marginStart="@dimen/table_padding" />
+        </TableRow>
+    </TableLayout>
+</GridLayout>

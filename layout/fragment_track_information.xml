@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:background="@color/panelSolidBackground" android:layout_width="UNKNOWN_DATA_0x7f070088" android:layout_height="match_parent" android:animateLayoutChanges="true" style="@style/Scrollbar">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/fragment_padding">
+        <ImageButton android:id="@+id/moreButton" android:background="?unknown_attr_ref: 101045c" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_more_vert" android:tint="@color/colorPrimaryDark" android:layout_alignParentTop="true" android:layout_marginStart="@dimen/image_button_padding" android:layout_marginEnd="@dimen/image_button_padding" android:layout_alignParentEnd="true" />
+        <ImageButton android:id="@+id/stopButton" android:background="?unknown_attr_ref: 101045c" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_record_stop" android:tint="@color/colorPrimaryDark" android:layout_alignParentTop="true" android:layout_marginStart="@dimen/image_button_padding" android:layout_toStartOf="@+id/moreButton" />
+        <info.andreynovikov.androidcolorpicker.ColorPickerSwatch android:id="@+id/colorSwatch" android:visibility="gone" android:layout_width="UNKNOWN_DATA_0x7f07005a" android:layout_height="UNKNOWN_DATA_0x7f07005a" android:layout_marginLeft="@dimen/color_swatch_margins_large" android:layout_marginRight="@dimen/color_swatch_margins_large" android:layout_toStartOf="@+id/stopButton" />
+        <FrameLayout android:id="@+id/namePlaceholder" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_marginStart="@dimen/fragment_padding" android:layout_toStartOf="@+id/colorSwatch" android:layout_alignParentStart="true">
+            <TextView android:textAppearance="?unknown_attr_ref: 1010040" android:textStyle="bold" android:id="@+id/name" android:layout_width="match_parent" android:layout_height="wrap_content" />
+            <android.support.design.widget.TextInputLayout android:id="@+id/nameWrapper" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <android.support.design.widget.TextInputEditText android:ellipsize="end" android:id="@+id/nameEdit" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/name" android:maxLines="1" android:scrollHorizontally="true" android:inputType="text|textCapCharacters|textCapWords|textCapSentences|textAutoCorrect|textAutoComplete|textMultiLine|textImeMultiLine|textNoSuggestions|textUri|textEmailAddress|textEmailSubject|textShortMessage|textLongMessage|textPersonName|textPostalAddress|textPassword|textVisiblePassword|textWebEditText|textFilter|textPhonetic|textWebEmailAddress|textWebPassword|phone" />
+            </android.support.design.widget.TextInputLayout>
+        </FrameLayout>
+        <TableLayout android:id="@+id/statisticsTable" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:stretchColumns="1" android:layout_below="@+id/namePlaceholder" android:layout_marginStart="@dimen/fragment_padding" android:layout_marginEnd="@dimen/fragment_padding" android:layout_alignParentStart="true" android:layout_alignParentEnd="true">
+            <TableRow android:id="@+id/sourceRow" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_folder" android:tint="@color/colorPrimaryDark" android:layout_marginEnd="16dp" />
+                <TextView android:textColor="?unknown_attr_ref: 1010036" android:id="@+id/source" android:layout_width="match_parent" android:layout_height="wrap_content" />
+            </TableRow>
+            <TableRow android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/table_padding">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_linear_scale" android:tint="@color/colorPrimaryDark" android:layout_marginEnd="16dp" />
+                <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:textAppearance="?unknown_attr_ref: 1010041" android:textColor="?unknown_attr_ref: 1010036" android:id="@+id/pointCount" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    <TextView android:textColor="?unknown_attr_ref: 1010036" android:id="@+id/segmentCount" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                </LinearLayout>
+            </TableRow>
+            <TableRow android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/table_padding">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_straighten" android:tint="@color/colorPrimaryDark" android:layout_marginEnd="16dp" />
+                <TextView android:textAppearance="?unknown_attr_ref: 1010041" android:textColor="?unknown_attr_ref: 1010036" android:id="@+id/distance" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </TableRow>
+            <TableRow android:id="@+id/timeRow" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/table_padding">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_timer" android:tint="@color/colorPrimaryDark" android:layout_marginEnd="16dp" />
+                <TextView android:textAppearance="?unknown_attr_ref: 1010041" android:textColor="?unknown_attr_ref: 1010036" android:id="@+id/timeSpan" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </TableRow>
+            <TableRow android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_span="2" android:text="@string/start_point" style="@style/SubHeader" />
+            </TableRow>
+            <TableRow android:layout_width="match_parent" android:layout_height="wrap_content">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_place" android:tint="@color/colorPrimaryDark" android:layout_marginEnd="16dp" />
+                <TextView android:textAppearance="?unknown_attr_ref: 1010041" android:textColor="?unknown_attr_ref: 1010036" android:id="@+id/startCoordinates" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textIsSelectable="true" />
+            </TableRow>
+            <TableRow android:id="@+id/startDateRow" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/table_padding">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_schedule" android:tint="@color/colorPrimaryDark" android:layout_marginEnd="16dp" />
+                <TextView android:textColor="?unknown_attr_ref: 1010036" android:id="@+id/startDate" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </TableRow>
+            <TableRow android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_span="2" android:text="@string/finish_point" style="@style/SubHeader" />
+            </TableRow>
+            <TableRow android:layout_width="match_parent" android:layout_height="wrap_content">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_place" android:tint="@color/colorPrimaryDark" android:layout_marginEnd="16dp" />
+                <TextView android:textAppearance="?unknown_attr_ref: 1010041" android:textColor="?unknown_attr_ref: 1010036" android:id="@+id/finishCoordinates" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textIsSelectable="true" />
+            </TableRow>
+            <TableRow android:id="@+id/finishDateRow" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/table_padding">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_schedule" android:tint="@color/colorPrimaryDark" android:layout_marginEnd="16dp" />
+                <TextView android:textColor="?unknown_attr_ref: 1010036" android:id="@+id/finishDate" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </TableRow>
+            <TableRow android:id="@+id/statisticsHeader" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_span="2" android:text="@string/statistics" style="@style/SubHeader" />
+            </TableRow>
+            <TableRow android:id="@+id/speedRow" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_timer" android:tint="@color/colorPrimaryDark" android:layout_marginEnd="16dp" />
+                <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:textColor="?unknown_attr_ref: 1010036" android:id="@+id/averageSpeed" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    <TextView android:textColor="?unknown_attr_ref: 1010036" android:id="@+id/maxSpeed" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                </LinearLayout>
+            </TableRow>
+            <TableRow android:id="@+id/elevationUpRow" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/table_padding">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_trending_up" android:tint="@color/colorPrimaryDark" android:layout_marginEnd="16dp" />
+                <TextView android:textColor="?unknown_attr_ref: 1010036" android:id="@+id/maxElevation" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </TableRow>
+            <TableRow android:id="@+id/elevationDownRow" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/table_padding">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_trending_down" android:tint="@color/colorPrimaryDark" android:layout_marginEnd="16dp" />
+                <TextView android:textColor="?unknown_attr_ref: 1010036" android:id="@+id/minElevation" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </TableRow>
+        </TableLayout>
+        <LinearLayout android:orientation="vertical" android:id="@+id/charts" android:paddingBottom="@dimen/fragment_padding" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/statisticsTable" android:layout_marginStart="@dimen/fragment_padding" android:layout_marginEnd="@dimen/fragment_padding" android:layout_alignParentStart="true" android:layout_alignParentEnd="true">
+            <TextView android:id="@+id/elevationHeader" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/elevation_profile" style="@style/SubHeader" />
+            <com.github.mikephil.charting.charts.LineChart android:id="@+id/elevationChart" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0xc801" android:layout_marginTop="-8dp" />
+            <TextView android:id="@+id/speedHeader" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/speed_profile" style="@style/SubHeader" />
+            <com.github.mikephil.charting.charts.LineChart android:id="@+id/speedChart" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0xc801" android:layout_marginTop="-8dp" />
+        </LinearLayout>
+        <View android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x7f070087" android:layout_below="@+id/charts" />
+    </RelativeLayout>
+</ScrollView>

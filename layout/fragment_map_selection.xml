@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@color/panelSolidBackground" android:paddingTop="@dimen/fragment_padding" android:paddingBottom="@dimen/fragment_padding" android:layout_width="UNKNOWN_DATA_0x7f070088" android:layout_height="wrap_content" android:paddingStart="@dimen/fragment_with_fab_start_padding" android:paddingEnd="@dimen/fragment_padding">
+    <ImageButton android:id="@+id/helpButton" android:background="?unknown_attr_ref: 101045c" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_help" android:tint="@color/colorPrimaryDark" android:layout_centerVertical="true" android:contentDescription="@string/explain" android:layout_marginStart="@dimen/table_padding" android:layout_alignParentEnd="true" />
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_toStartOf="@+id/helpButton" android:layout_alignParentStart="true">
+        <TextView android:textAppearance="?unknown_attr_ref: 1010041" android:id="@+id/message" android:layout_width="match_parent" android:layout_height="wrap_content" />
+        <TextView android:textAppearance="?unknown_attr_ref: 1010042" android:id="@+id/status" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" />
+        <TextView android:textAppearance="?unknown_attr_ref: 1010042" android:id="@+id/count" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <LinearLayout android:id="@+id/hillshadesCheckboxHolder" android:paddingTop="@dimen/textPadding" android:paddingBottom="@dimen/textPadding" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <CheckBox android:id="@+id/downloadHillshades" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/downloadHillshades" />
+        </LinearLayout>
+        <LinearLayout android:id="@+id/downloadCheckboxHolder" android:paddingTop="@dimen/textPadding" android:paddingBottom="@dimen/textPadding" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <CheckBox android:id="@+id/downloadBasemap" android:layout_width="match_parent" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

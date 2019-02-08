@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="#222222" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <FrameLayout android:id="@id/background" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <com.github.paolorotolo.appintro.AppIntroViewPager android:id="@id/view_pager" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    <LinearLayout android:gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:orientation="vertical" android:id="@id/bottom" android:background="0x106000d" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x7f07004c" android:layout_alignParentBottom="true">
+        <TextView android:id="@id/bottom_separator" android:background="#55000000" android:visibility="gone" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x100" />
+        <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="16dp"
+            <FrameLayout android:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@id/indicator_container" android:layout_width="wrap_content" android:layout_height="match_parent" android:layoutDirection="ltr" />
+            <ImageButton android:layout_gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@id/skip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginStart="16dp" android:srcCompat="@drawable/ic_skip_white" style="@style/AppIntroButtonStyleCompat" />
+            <ImageButton android:layout_gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@id/back" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginStart="16dp" android:srcCompat="@drawable/ic_arrow_back_white" style="@style/AppIntroButtonStyleCompat" />
+            <ImageButton android:layout_gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@id/next" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="16dp" android:layout_marginEnd="16dp" android:srcCompat="@drawable/ic_arrow_forward_white" style="@style/AppIntroButtonStyleCompat" />
+            <ImageButton android:layout_gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@id/done" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="16dp" android:layout_marginEnd="16dp" android:srcCompat="@drawable/ic_done_white" style="@style/AppIntroButtonStyleCompat" />
+        </FrameLayout>
+    </LinearLayout>
+</RelativeLayout>

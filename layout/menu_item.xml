@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x101004d">
+    <ImageView android:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@id/icon" android:layout_width="UNKNOWN_DATA_0x1401" android:layout_height="wrap_content" android:includeFontPadding="true" android:paddingStart="4dp" android:paddingEnd="4dp" />
+    <TextView android:textAppearance="?unknown_attr_ref: 1010041" android:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:id="@id/title" android:layout_width="UNKNOWN_DATA_0x1" android:layout_height="wrap_content" android:includeFontPadding="false" android:layout_weight="1.0" />
+    <Switch android:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/check" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="3dp" android:paddingEnd="3dp" />
+    <FrameLayout android:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/actionViewContainer" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="8dp" android:paddingEnd="12dp" />
+</LinearLayout>

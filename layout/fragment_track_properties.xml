@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="horizontal" android:background="@color/panelSolidBackground" android:padding="@dimen/fragment_padding" android:layout_width="UNKNOWN_DATA_0x7f070088" android:layout_height="wrap_content">
+    <android.support.design.widget.TextInputLayout android:id="@+id/nameWrapper" android:layout_width="UNKNOWN_DATA_0x1" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <EditText android:ellipsize="end" android:id="@+id/nameEdit" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/name" android:maxLines="1" android:scrollHorizontally="true" android:inputType="text|textCapCharacters|textCapWords|textCapSentences|textAutoCorrect|textAutoComplete|textMultiLine|textImeMultiLine|textNoSuggestions|textUri|textEmailAddress|textEmailSubject|textShortMessage|textLongMessage|textPersonName|textPostalAddress|textPassword|textVisiblePassword|textWebEditText|textFilter|textPhonetic|textWebEmailAddress|textWebPassword|phone" />
+    </android.support.design.widget.TextInputLayout>
+    <info.andreynovikov.androidcolorpicker.ColorPickerSwatch android:id="@+id/colorSwatch" android:layout_width="UNKNOWN_DATA_0x7f070059" android:layout_height="UNKNOWN_DATA_0x7f070059" android:layout_margin="@dimen/color_swatch_margins_small" />
+</LinearLayout>
